@@ -1,0 +1,23 @@
+// utils
+@use 'utils/variables';
+@use 'utils/mixins';
+
+// base styles
+@use 'base/fonts';
+
+// layout
+@use 'layout/header';
+
+// components
+@use 'components/button';
+
+// pages
+@use 'pages/promo';
+
+// libs
+@use '../sass/libs/fontello.css';
+
+.container {
+    max-width: 950px;
+    margin: 0 auto;
+}
