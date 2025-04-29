@@ -398,3 +398,29 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+
+# === Custom frontend project additions ===
+
+# Node.js dependencies
+node_modules/
+
+# Output directories
+dist/
+build/
+
+# Vite dev server cache
+.vite/
+
+# Sass cache
+.sass-cache/
+
+# Local environment variables
+.env
+.env.*.local
+
+# Editor settings
+.vscode/
+.idea/
+
+# VS Code local history
+.history/
