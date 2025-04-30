@@ -9,10 +9,11 @@
 @use 'layout/header';
 
 // components
-@use 'components/button';
+@use 'components/buttons';
 
 // pages
 @use 'pages/promo';
+@use 'pages/benefits';
 
 // libs
 @use '../sass/libs/fontello.css';
@@ -20,4 +21,16 @@
 .container {
     max-width: 950px;
     margin: 0 auto;
+}
+
+@media screen and (max-width: 992px) {
+    .container {
+        max-width: 850px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 650px;
+    }
 }

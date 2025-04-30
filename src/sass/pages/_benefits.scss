@@ -1,0 +1,69 @@
+@use '../utils/variables' as *;
+
+.benefits {
+    padding: 70px 0 65px 0;
+    background-color: $bg-color;
+
+    &__title {
+        font-family: MuseoModerno;
+        color: $text-color;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 30px;
+        letter-spacing: 0px;
+        text-align: center;
+        vertical-align: bottom;
+        text-transform: uppercase;
+    }
+
+    &__items {
+        margin-top: 60px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        width: 275px;
+
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+
+        &-title {
+            margin-top: 35px;
+            color: $text-color;
+            font-family: MuseoModerno;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 100%;
+            letter-spacing: 0px;
+            text-align: center;
+            vertical-align: bottom;
+        }
+
+        &-text {
+            margin: 0;
+            margin-top: 20px;
+            color: $text-color;
+            font-family: MuseoModerno;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 18px;
+            text-align: center;
+            vertical-align: bottom;
+
+            span {
+                color: $main-color;
+                font-family: MuseoModerno;
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 18px;
+                vertical-align: bottom;
+                text-decoration: underline;
+                text-decoration-style: solid;
+            }
+        }
+    }
+}

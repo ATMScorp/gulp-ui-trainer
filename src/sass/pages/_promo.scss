@@ -1,5 +1,110 @@
+@use '../utils/variables' as *;
+
 .promo {
     min-height: 650px;
     padding: 21px 0 93px 0;
     background: url('../../assets/img/promo/bg.jpg') center (center/cover) no-repeat;
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-top: 90px;
+    }
+
+    &__header {
+        color: $secondary-color;
+        font-family: MuseoModerno;
+        font-weight: 700;
+        font-size: 42px;
+        line-height: 42px;
+        letter-spacing: 0px;
+        text-align: right;
+        vertical-align: bottom;
+        text-transform: uppercase;
+    }
+
+    &__subheader {
+        color: $secondary-color;
+        font-family: MuseoModerno;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 24px;
+        letter-spacing: 0px;
+        text-align: right;
+        vertical-align: bottom;
+        text-transform: uppercase;
+    }
+
+    &__icons {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 60px;
+        width: 425px;
+        flex-wrap: wrap;
+    }
+
+    &__icon {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 106px;
+        text-align: center;
+        font-family: MuseoModerno;
+        color: $secondary-color;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 14px;
+        letter-spacing: 0px;
+        vertical-align: bottom;
+
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+
+    &__link {
+        margin-top: 18px;
+        color: $secondary-color;
+        font-family: MuseoModerno;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 100%;
+        letter-spacing: 0px;
+        text-align: right;
+        vertical-align: bottom;
+
+        a {
+            font-family: MuseoModerno;
+            color: $secondary-color;
+            text-decoration: underline;
+            text-decoration-style: solid;
+            text-transform: uppercase;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .promo {
+        padding: 30px 0 93px 0;
+
+        &__wrapper {
+            align-items: center;
+            margin-top: 120px;
+        }
+
+        &__header {
+            text-align: center;
+            font-size: 52px;
+        }
+
+        &__subheader {
+            margin-top: 25px;
+        }
+
+        &__icon {
+            font-size: 15px;
+        }
+    }
 }
