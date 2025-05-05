@@ -4,19 +4,6 @@
     padding: 70px 0 65px 0;
     background-color: $bg-color;
 
-    &__title {
-        font-family: MuseoModerno;
-        color: $text-color;
-        font-weight: 700;
-        font-size: 30px;
-        line-height: 30px;
-        letter-spacing: 0px;
-        text-align: center;
-        vertical-align: bottom;
-        text-transform: uppercase;
-        margin: 0;
-    }
-
     &__items {
         margin-top: 60px;
         display: flex;

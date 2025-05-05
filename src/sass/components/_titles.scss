@@ -1,0 +1,16 @@
+@use '../utils/variables' as *;
+
+.title {
+    font-family: MuseoModerno;
+    color: $text-color;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+
+    &_left {
+        color: $secondary-color;
+        text-align: left;
+        font-size: 36px;
+    }
+}

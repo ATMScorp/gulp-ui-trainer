@@ -10,10 +10,13 @@
 
 // components
 @use 'components/buttons';
+@use 'components/titles';
+@use 'components/forms';
 
 // pages
 @use 'pages/promo';
 @use 'pages/benefits';
+@use 'pages/consulation';
 
 // libs
 @use '../sass/libs/fontello.css';
