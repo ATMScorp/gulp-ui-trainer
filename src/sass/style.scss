@@ -13,10 +13,12 @@
 @use 'components/titles';
 @use 'components/forms';
 
-// pages
-@use 'pages/promo';
-@use 'pages/benefits';
-@use 'pages/consulation';
+// blocks
+@use 'blocks/promo';
+@use 'blocks/benefits';
+@use 'blocks/consulation';
+@use 'blocks/carousel';
+@use 'blocks/catalog';
 
 // libs
 @use '../sass/libs/fontello.css';
