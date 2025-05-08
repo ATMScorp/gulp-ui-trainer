@@ -1,0 +1,60 @@
+@use '../utils/variables' as *;
+
+.reviews {
+    padding-bottom: 50px;
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+        margin-top: 60px;
+
+    }
+
+    &__card {
+        display: flex;
+        gap: 60px;
+        align-items: flex-start;
+
+        &-img {
+            display: block;
+            width: 169px;
+            height: 169px;
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        &-title {
+            color: $text-color;
+            font-family: MuseoModerno;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 18px;
+            letter-spacing: 0px;
+            vertical-align: bottom;
+        }
+
+        &-subtitle {
+            color: #646464;
+            font-family: MuseoModerno;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 100%;
+            letter-spacing: 0px;
+            vertical-align: bottom;
+        }
+
+        &-descr {
+            margin-top: 10px;
+            width: 680px;
+            color: $text-color;
+            font-family: MuseoModerno;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0px;
+            vertical-align: bottom;
+        }
+    }
+}
