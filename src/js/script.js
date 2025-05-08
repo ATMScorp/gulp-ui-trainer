@@ -4,6 +4,9 @@ $(document).ready(function () {
         adaptiveHeight: true,
         prevArrow: '<button type="button" class="slick-prev"><img src="assets/icons/left-arrow.svg"></button>',
         nextArrow: '<button type="button" class="slick-next"><img src="assets/icons/right-arrow.svg"></button>',
+        customPaging: function (slick, index) {
+            return '<div class="dot"></div>';  // Это создаёт кастомные точки
+        },
         responsive: [
             {
                 breakpoint: 992,

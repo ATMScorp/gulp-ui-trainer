@@ -1,3 +1,5 @@
+@use '../utils/variables' as *;
+
 .carousel {
     padding: 81px 0;
 
@@ -25,5 +27,63 @@
     .slick-next {
         right: -66px;
         left: auto;
+    }
+
+    .slick-dots .dot {
+        gap: 10px;
+        width: 12px;
+        height: 12px;
+        background-color: $secondary-price;
+        transition: background-color 0.3s ease;
+        cursor: pointer;
+    }
+
+    .slick-dots .slick-active .dot {
+        background-color: $main-color;
+    }
+
+    .slick-dots {
+        display: flex;
+        position: absolute;
+        list-style-type: none;
+        bottom: -65px;
+        left: 50%;
+        transform: translateX(calc(50% - 100px));
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .carousel {
+        &__inner {
+            img {
+                width: 600px;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .carousel {
+        &__inner {
+            img {
+                width: 500px;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .carousel {
+        &__inner {
+            width: 400px;
+
+            img {
+                width: 350px;
+                margin: 0 auto;
+            }
+        }
     }
 }

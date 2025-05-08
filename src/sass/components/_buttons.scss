@@ -37,3 +37,13 @@
         font-size: 14px;
     }
 }
+
+@media screen and (max-width: 576px) {
+    .button {
+        &_mini {
+            width: 105px;
+            height: 34px;
+            font-size: 12px;
+        }
+    }
+}

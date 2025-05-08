@@ -3,6 +3,11 @@
 .catalog {
     padding-bottom: 100px;
 
+    &__title {
+        line-height: 45px;
+        font-weight: 300;
+    }
+
     &__tabs {
         margin-top: 70px;
         list-style-type: none;
@@ -12,6 +17,7 @@
         gap: 10px;
         margin-bottom: 0;
         padding-bottom: 0;
+        padding-left: 0;
     }
 
     &__tab {
@@ -205,6 +211,110 @@
 
             &:hover {
                 color: $main-color;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .catalog {
+        &-item {
+            width: 270px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .catalog {
+
+        &__title {
+            font-size: 26px;
+        }
+
+        &__tab {
+            font-size: 16px;
+        }
+
+        &-item {
+            width: 315px;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .catalog {
+        &__content {
+            gap: 15px 20px;
+
+            &_active {
+                display: flex;
+            }
+        }
+
+        &-item {
+            width: 240px;
+            min-height: 40px;
+            padding: 20px 20px 26px 20px;
+
+            &__img {
+                height: 150px;
+            }
+
+            &__subtitle {
+                font-size: 14px;
+            }
+
+            &__descr {
+                font-size: 12px;
+            }
+
+            &__link {
+                font-size: 12px;
+            }
+
+            &__old-price {
+                font-size: 12px;
+            }
+
+            &__price {
+                font-size: 18px;
+            }
+
+            &__content {
+                transform: translateX(-110%);
+
+                &_active {
+                    margin-right: 20px;
+                    transform: translateX(0%);
+                }
+            }
+
+            &__list {
+                &_active {
+                    transform: translateX(-100%);
+                    margin-left: 0px;
+                }
+
+                li {
+                    position: relative;
+                    color: #555555;
+                    font-size: 12px;
+                    font-weight: 300;
+                    margin-bottom: 20px;
+
+                    &:before {
+                        width: 3px;
+                        height: 3px;
+                    }
+                }
+            }
+
+            &__back {
+                font-size: 12px;
+
+                &:hover {
+                    color: $main-color;
+                }
             }
         }
     }
