@@ -27,7 +27,7 @@
                 </div>
                 <div class="header__contact">
                     <a href="tel:+48123456789" class="header__phone">+48 123 456 789</a>
-                    <button class="button" type="button">Order a call</button>
+                    <button data-modal="consultation" class="button" type="button">Order a call</button>
                 </div>
             </header>
 
@@ -50,7 +50,8 @@
                     </div>
                 </div>
 
-                <button type=" button" class="button button_main">request a consultation</button>
+                <button type=" button" class="button button_main" data-modal="consultation">request a
+                        consultation</button>
                         <div class="promo__link">
                             or
                             <a href="#">go to catalogue</a>
@@ -162,7 +163,7 @@
                     <div class="catalog-item__wrapper">
                         <div class="catalog-item__content catalog-item__content_active">
                             <img src="assets/img/catalog/pulsometr1.png" alt="pulsometr" class="catalog-item__img">
-                            <div class="catalog-item__subtitle">Polar FT1 heart rate monitor</div>
+                            <div class="catalog-item__subtitle">Suunto M2 heart rate monitor</div>
                             <div class="catalog-item__descr">Polar FT1 heart rate monitorFor the first steps in heart
                                 rate-based
                                 training</div>
@@ -483,6 +484,41 @@
             </ul>
         </div>
     </footer>
+
+    <section class="overlay">
+        <div class="modal" id="consultation">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">Just fill out the application form</div>
+            <div class="modal__descr">and we will call you back within 10 minutes
+            </div>
+            <form action="#" class="feed-form feed-form_mt25">
+                <input name="name" type="text" id="name" placeholder="Your name" class="form-control" required>
+                <input name="phone" type="number" id="tel" placeholder="Your telephone" class="form-control" required>
+                <input name="email" type="email" id="email" placeholder="Your email" class="form-control" required>
+                <button class="button button_submit" type="submit">Request consultation</button>
+            </form>
+        </div>
+
+        <div class="modal" id="order">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">Your order:</div>
+            <div class="modal__descr">Polar FT1 heart rate monitor
+            </div>
+            <form action="#" class="feed-form feed-form_mt25">
+                <input name="name" type="text" id="name" placeholder="Your name" class="form-control" required>
+                <input name="phone" type="number" id="tel" placeholder="Your telephone" class="form-control" required>
+                <input name="email" type="email" id="email" placeholder="Your email" class="form-control" required>
+                <button class="button button_submit" type="submit">buy</button>
+            </form>
+        </div>
+
+        <div class="modal modal_mini" id="thanks">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">Thank you foryour submission!</div>
+            <div class="modal__descr">Our manager will contact you as soon as possible!
+            </div>
+        </div>
+    </section>
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
