@@ -5,7 +5,7 @@ $(document).ready(function () {
         prevArrow: '<button type="button" class="slick-prev"><img src="assets/icons/left-arrow.svg"></button>',
         nextArrow: '<button type="button" class="slick-next"><img src="assets/icons/right-arrow.svg"></button>',
         customPaging: function (slick, index) {
-            return '<div class="dot"></div>';  // Это создаёт кастомные точки
+            return '<div class="dot"></div>';
         },
         responsive: [
             {
@@ -54,4 +54,23 @@ $(document).ready(function () {
             $('.overlay, #order').fadeIn('slow');
         })
     });
-}); 
+
+    function validateForms(form) {
+        $(form).validate({
+            rules: {
+                name: "required",
+                phone: "required",
+                email: {
+                    required: true,
+                    email: true,
+                }
+            },
+        });
+    };
+
+    validateForms('#consultation-form');
+    validateForms('#consultation form');
+    validateForms('#order form');
+
+    $('input[name=phone]').mask("+48 999 999 999");
+});

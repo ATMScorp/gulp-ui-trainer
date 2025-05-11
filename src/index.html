@@ -95,9 +95,9 @@
             <p class="consultation__descr">Just fill out the application <br>form and we'll call you back within 10
                 minutes.
             </p>
-            <form action="#" class="feed-form">
+            <form action="#" class="feed-form" id="consultation-form">
                 <input name="name" type="text" id="name" placeholder="Your name" class="form-control" required>
-                <input name="phone" type="number" id="tel" placeholder="Your telephone" class="form-control" required>
+                <input name="phone" id="tel" placeholder="Your telephone" class="form-control" required>
                 <input name="email" type="email" id="email" placeholder="Your email" class="form-control" required>
                 <button class="button button_submit" type="submit">Submit form</button>
             </form>
@@ -492,9 +492,9 @@
             <div class="modal__descr">and we will call you back within 10 minutes
             </div>
             <form action="#" class="feed-form feed-form_mt25">
-                <input name="name" type="text" id="name" placeholder="Your name" class="form-control" required>
-                <input name="phone" type="number" id="tel" placeholder="Your telephone" class="form-control" required>
-                <input name="email" type="email" id="email" placeholder="Your email" class="form-control" required>
+                <input name="name" type="text" placeholder="Your name" class="form-control">
+                <input name="phone" placeholder="Your telephone" class="form-control">
+                <input name="email" type="email" placeholder="Your email" class="form-control">
                 <button class="button button_submit" type="submit">Request consultation</button>
             </form>
         </div>
@@ -506,7 +506,7 @@
             </div>
             <form action="#" class="feed-form feed-form_mt25">
                 <input name="name" type="text" id="name" placeholder="Your name" class="form-control" required>
-                <input name="phone" type="number" id="tel" placeholder="Your telephone" class="form-control" required>
+                <input name="phone" id="tel" placeholder="Your telephone" class="form-control" required>
                 <input name="email" type="email" id="email" placeholder="Your email" class="form-control" required>
                 <button class="button button_submit" type="submit">buy</button>
             </form>
@@ -523,6 +523,8 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
+    <script type="text/javascript" src="js/jquery.validate.min.js"></script>
     <script src="../js/script.js"></script>
 </body>
 
