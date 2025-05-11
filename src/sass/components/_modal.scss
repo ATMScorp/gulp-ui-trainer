@@ -60,3 +60,29 @@
 #thanks {
     display: none;
 }
+
+@media screen and (max-width: 768px) {
+    .modal {
+        padding: 38px 40px 40px 40px;
+        width: 380px;
+        min-height: 400px;
+
+        &__subtitle {
+            font-size: 17px;
+            line-height: 17px;
+        }
+
+        &__descr {
+            font-size: 12px;
+            line-height: 12px;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .modal {
+        padding: 30px 35px 35px 35px;
+        width: 380px;
+        min-height: 400px;
+    }
+}
