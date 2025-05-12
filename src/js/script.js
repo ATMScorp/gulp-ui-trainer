@@ -86,9 +86,9 @@ $(document).ready(function () {
             url: "mailer/smart.php",
             data: $(this).serialize()
         }).done(function () {
-            $(this).fing("input").val("");
+            $(this).find("input").val("");
             $('#consultation, #order').fadeOut();
-            $('.overlay, #thanks').fadeIn(slow);
+            $('.overlay, #thanks').fadeIn("slow");
 
             $('form').trigger('reset');
         });
