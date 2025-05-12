@@ -73,4 +73,26 @@ $(document).ready(function () {
     validateForms('#order form');
 
     $('input[name=phone]').mask("+48 999 999 999");
+
+    $('form').submit(function (e) {
+        e.preventDefault();
+
+        if (!$(this).valid()) {
+            return;
+        }
+
+        $.ajax({
+            type: "POST",
+            url: "mailer/smart.php",
+            data: $(this).serialize()
+        }).done(function () {
+            $(this).fing("input").val("");
+            $('#consultation, #order').fadeOut();
+            $('.overlay, #thanks').fadeIn(slow);
+
+            $('form').trigger('reset');
+        });
+
+        return false;
+    });
 });
